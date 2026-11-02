@@ -50,7 +50,7 @@ public class Student {
         double dtb = tinhDiemTrungBinh();
 
         if (dtb >= 8) {
-            return "Gioi";
+            return "Sinh vien gioi";
         } else if (dtb >= 6.5) {
             return "Kha";
         } else if (dtb >= 5) {
@@ -72,6 +72,7 @@ public class Student {
 
     public String getHoTen() {
         return hoTen;
+        
     }
 }
     

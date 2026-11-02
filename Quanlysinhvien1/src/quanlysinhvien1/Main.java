@@ -80,6 +80,26 @@ public class Main {
         } while (chon != 4);
 
         sc.close();
+        
+    System.out.print("Nhap ma sinh vien can tim: ");
+    String ma = sc.nextLine();
+
+    boolean timThay = false;
+
+    for (Student sv : danhSach) {
+        if (sv.getMaSV().equalsIgnoreCase(ma)) {
+            System.out.println("Tim thay sinh vien:");
+            sv.hienThiThongTin();
+            timThay = true;
+            break;
+        }
+    }
+
+    if (!timThay) {
+        System.out.println("Khong tim thay sinh vien!");
+    }
+ 
+    
     }
 }
 
